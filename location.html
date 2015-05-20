@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Webshop</title>
+        <script src="javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+        <link href="javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+        <script src="javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <link href="javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+        <script src="javascript/common.js" type="text/javascript"></script> 
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <link rel="shortcut icon" type="image/png" href="image/fav.png"/>
+        <script src="javascript/jquery.masonry.min.js"></script>
+        <script src="javascript/gallery.js"></script>
+        <script src="javascript/slider.js"></script>
+        <link rel="stylesheet" href="slider/flexslider.css" type="text/css" media="screen">
+        <script type="text/javascript" src="slider/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+        <script type="text/javascript" src="javascript/map.js"></script>         
+
+    </head>
+    <body onload="initialize();">
+        <div id="wrapper">
+            <header>
+                <div class="container header">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div id="logo">
+                                <a href="index.html"><img src="image/catalog/logo.png" title="Your Store" alt="Your Store" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div id="info" class="info-group">
+                                <div>Your Local Pizzeria: <b>+ 49 (0) 30-66 66 66 66</b></div>
+                                <div>Service: <b>service@big-commerce.com</b></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="icons" class="icons-group">
+                                <a href="#"><img src="image/catalog/paypal.jpg" title="Your Store" alt="Your Store" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <nav id="menu" class="mainmenu navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button> 
+                        <div class="shop-cart cart-navbar"><a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+                    </div>
+                    <div class="left-block collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">           
+                            <li class="dropdown">
+                                <a href="index.html" ><i class="fa fa-home"></i></a>   
+                            </li>                         
+                            <li class="dropdown">
+                                <a href="/location.html" class="dropdown-toggle" data-toggle="dropdown">Pizzakuriere</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-inner">
+                                        <ul class="list-unstyled">
+                                            <li><a href="item.html">Aaarau</a></li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/location.html" class="dropdown-toggle" data-toggle="dropdown">Restaurants</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-inner">
+                                        <ul class="list-unstyled">
+                                            <li><a href="rest.html">Rapperswil</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown"><a href="gallery.html">Gallery</a></li>
+                            <li class="dropdown active"><a href="location.html">Locations</a></li>
+                            <li class="dropdown"><a href="contact.html">Contact</a></li>
+                            <li class="dropdown"><a href="about.html">About</a></li>
+                        </ul>
+                    </div>               
+                </nav> 
+            </div>
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul>                        
+                        <li class=""><a href="#" >Home</a></li> 
+                        <li class="active">Locations</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h1>Our restaurants on map</h1>
+                    <div id="map_canvas" style="width:100%; height:600px"></div> 
+                    <div class="bar bar-list col-sm-6"> 
+                        <div class="bar-inner col-sm-12">
+                            <div class="col-sm-6">
+                                <h6>Stavanger</h6>
+                                <div class="bar-address">415 Stavanger Drive <br> St. John's, NL, A1A 0A1</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="bar-contact">Store Information: (709) 738-5544</div>
+                                <div class="bar-time">Sun - Thu: 11:00 AM - 1:00 AM <br> Fri - Sat: 11:00 AM - 2:00 AM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar bar-list col-sm-6"> 
+                        <div class="bar-inner col-sm-12">
+                            <div class="col-sm-6">
+                                <h6>Stavanger</h6>
+                                <div class="bar-address">415 Stavanger Drive <br> St. John's, NL, A1A 0A1</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="bar-contact">Store Information: (709) 738-5544</div>
+                                <div class="bar-time">Sun - Thu: 11:00 AM - 1:00 AM <br> Fri - Sat: 11:00 AM - 2:00 AM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar bar-list col-sm-6"> 
+                        <div class="bar-inner col-sm-12">
+                            <div class="col-sm-6">
+                                <h6>Stavanger</h6>
+                                <div class="bar-address">415 Stavanger Drive <br> St. John's, NL, A1A 0A1</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="bar-contact">Store Information: (709) 738-5544</div>
+                                <div class="bar-time">Sun - Thu: 11:00 AM - 1:00 AM <br> Fri - Sat: 11:00 AM - 2:00 AM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar bar-list col-sm-6"> 
+                        <div class="bar-inner col-sm-12">
+                            <div class="col-sm-6">
+                                <h6>Stavanger</h6>
+                                <div class="bar-address">415 Stavanger Drive <br> St. John's, NL, A1A 0A1</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="bar-contact">Store Information: (709) 738-5544</div>
+                                <div class="bar-time">Sun - Thu: 11:00 AM - 1:00 AM <br> Fri - Sat: 11:00 AM - 2:00 AM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar bar-list col-sm-6"> 
+                        <div class="bar-inner col-sm-12">
+                            <div class="col-sm-6">
+                                <h6>Stavanger</h6>
+                                <div class="bar-address">415 Stavanger Drive <br> St. John's, NL, A1A 0A1</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="bar-contact">Store Information: (709) 738-5544</div>
+                                <div class="bar-time">Sun - Thu: 11:00 AM - 1:00 AM <br> Fri - Sat: 11:00 AM - 2:00 AM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar bar-list col-sm-6"> 
+                        <div class="bar-inner col-sm-12">
+                            <div class="col-sm-6">
+                                <h6>Stavanger</h6>
+                                <div class="bar-address">415 Stavanger Drive <br> St. John's, NL, A1A 0A1</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="bar-contact">Store Information: (709) 738-5544</div>
+                                <div class="bar-time">Sun - Thu: 11:00 AM - 1:00 AM <br> Fri - Sat: 11:00 AM - 2:00 AM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar bar-list col-sm-6"> 
+                        <div class="bar-inner col-sm-12">
+                            <div class="col-sm-6">
+                                <h6>Stavanger</h6>
+                                <div class="bar-address">415 Stavanger Drive <br> St. John's, NL, A1A 0A1</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="bar-contact">Store Information: (709) 738-5544</div>
+                                <div class="bar-time">Sun - Thu: 11:00 AM - 1:00 AM <br> Fri - Sat: 11:00 AM - 2:00 AM</div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <footer id="footer">
+                <div class="row inside">
+                    <div class="col-sm-3 resp-calign">
+                        <div id="logo">
+                            <a href="#"><img src="image/catalog/logo.png" title="Your Store" alt="Your Store" class="footer-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 center">
+                        <div class="bottom-group"><p>© Pizza Place Lviv</p></div>
+                    </div>
+                    <div class="col-sm-3 resp-calign right">
+                        <div class="bottom-group social-icons">
+                            <div class="icon-link icon-facebook dib">
+                                <a href="#" title="#" rel=""><i class="fa fa-facebook"></i></a></div>
+                            <div class="icon-link icon-twitter dib">
+                                <a href="#" title="#" rel=""><i class="fa fa-twitter"></i></a></div>
+                            <div class="icon-link icon-googleplus dib">
+                                <a href="#" title="#" rel=""><i class="fa fa-google-plus"></i></a></div>
+                            <div class="icon-link icon-pinterest dib">
+                                <a href="#" title="#" rel=""><i class="fa fa-pinterest"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Webshop</title>
+        <script src="javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+        <link href="javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+        <script src="javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <link href="javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+        <link href="theme/default/stylesheet/stylesheet.css" rel="stylesheet">
+        <script src="javascript/common.js" type="text/javascript"></script> 
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="javascript/responsiveslides.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+        <script src="javascript/slider.js" type="text/javascript"></script> 
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <div class="container header">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div id="logo">
+                                <a href="#"><img src="image/catalog/logo.png" title="Your Store" alt="Your Store" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div id="info" class="info-group">
+                                <div>Your Local Pizzeria: <b>+ 49 (0) 30-66 66 66 66</b></div>
+                                <div>Service: <b>service@big-commerce.com</b></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="icons" class="icons-group">
+                                <a href="#"><img src="image/catalog/paypal.jpg" title="Your Store" alt="Your Store" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <nav id="menu" class="mainmenu navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button> 
+                        <div class="shop-cart cart-navbar"><a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+                    </div>
+                    <div class="left-block collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">           
+                            <li class="dropdown">
+                                <a href="index.html"><i class="fa fa-home"></i></a>   
+                            </li>                         
+                            <li class="dropdown">
+                                <a href="/location.html" class="dropdown-toggle" data-toggle="dropdown">Pizzakuriere</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-inner">
+                                        <ul class="list-unstyled">
+                                            <li><a href="item.html">Aaarau</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/location.html" class="dropdown-toggle" data-toggle="dropdown">Restaurants</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-inner">
+                                        <ul class="list-unstyled">
+                                            <li><a href="rest.html">Rapperswil</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown"><a href="gallery.html">Gallery</a></li>
+                            <li class="dropdown"><a href="location.html">Locations</a></li>
+                            <li class="dropdown active"><a href="contact.html">Contact</a></li>
+                            <li class="dropdown"><a href="about.html">About</a></li>
+                        </ul>
+                    </div>               
+                </nav> 
+            </div>
+            <div class="container">
+                <div class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87147.4328141644!2d7.39487005!3d46.954669949999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39c0d43a1b77%3A0xcb555ffe0457659a!2z0JHQtdGA0L0sINCo0LLQtdC50YbQsNGA0ZbRjw!5e0!3m2!1suk!2sua!4v1431960796065" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                </div>
+                <div class="breadcrumbs">
+                    <ul>                        
+                        <li class="bc-pages"><a href="#" >Home</a></li> 
+                        <li class="bc-pages active"><a href="#" >Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <column id="column-left" class="col-sm-3 hidden-xs">
+                        <aside id="left">
+                            <div class="inside"></div>
+                            <div class="mod_article first last block" id="left-column"></div>
+                            <div class="ce_text bordered first block">
+                                <h2>Kontakt</h2>
+                                <p>Max Mustermann<br>
+                                    Musterstraße 22<br>
+                                    222222 Musterstadt<br>
+
+                                    Telefon: 02 22 - 22 22 22<br>
+                                    Telefax: 02 22 - 22 22 23<br>
+                                    E-Mail: <a href="mailto:info@mustermann.de">info@mustermann.de</a></p>  
+                            </div>
+                        </aside>
+                    </column> 
+                    <div id="content">
+                        <form action="http://webshop/index.php?route=information/contact" method="post" enctype="multipart/form-data" class="form-horizontal">
+                            <fieldset>
+                                <div class="ce_text bordered first block">
+                                    <h2>Contact Form</h2>
+                                    <div class="form-group required">
+                                        <label class="col-sm-12 control-label" for="input-name">Your Name</label>
+                                        <div class="col-sm-12">
+                                            <input type="text" name="name" value="" id="input-name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="col-sm-12 control-label" for="input-email">E-Mail Address</label>
+                                        <div class="col-sm-12">
+                                            <input type="text" name="email" value="" id="input-email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="col-sm-12 control-label" for="input-enquiry">Enquiry</label>
+                                        <div class="col-sm-12">
+                                            <textarea name="enquiry" rows="10" id="input-enquiry" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="buttons">
+                                <div class="pull-right">
+                                    <input class="btn btn-primary" type="submit" value="Send">
+                                </div>
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+             <footer id="footer">
+                <div class="row inside">
+                    <div class="col-sm-3 resp-calign">
+                        <div id="logo">
+                            <a href="#"><img src="image/catalog/logo.png" title="Your Store" alt="Your Store" class="footer-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 center">
+                        <div class="bottom-group"><p>© Pizza Place Lviv</p></div>
+                    </div>
+                    <div class="col-sm-3 resp-calign right">
+                        <div class="bottom-group social-icons">
+                            <div class="icon-link icon-facebook dib">
+                                <a href="#" title="#" rel=""><i class="fa fa-facebook"></i></a></div>
+                            <div class="icon-link icon-twitter dib">
+                                <a href="#" title="#" rel=""><i class="fa fa-twitter"></i></a></div>
+                            <div class="icon-link icon-googleplus dib">
+                                <a href="#" title="#" rel=""><i class="fa fa-google-plus"></i></a></div>
+                            <div class="icon-link icon-pinterest dib">
+                                <a href="#" title="#" rel=""><i class="fa fa-pinterest"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
