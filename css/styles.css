@@ -751,6 +751,7 @@ h2.price {
 
 .icons-group { 
     margin-top: 34px;
+    text-align: center;
 }
 
 #wrapper{  
@@ -1310,8 +1311,8 @@ p{
 
 #img-carousel .owl-page span {
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     margin: 5px 4px;
     opacity: 0.5;
     -webkit-border-radius: 20px;
@@ -1390,8 +1391,6 @@ only screen and (max-device-width : 399px){
 
     border: 0;
 }
-
-
 #filter li a.current {
     background: #ff5216;
     color: #fff;
@@ -1426,24 +1425,22 @@ only screen and (max-device-width : 399px){
         position: relative;
         background-color: #F9F8F5;*/
     display: inline-block;
-      border: 1px solid #fafafa;
+    border: 1px solid #fafafa;
 }
-
 .bar .bar-inner {  
-    margin: 32px 0 5px 0;     
+    margin: 32px 0 12px 0;     
     position: relative;
-
 }
-
 .db{
     display: block;
-
 }
-svg {
-  fill: currentColor;
+.dib{
+    display: inline-block;
 }
-
-
+.phone-number{
+    font-size: 30px;
+    color: #ff5216;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .visible-md {
